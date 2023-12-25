@@ -36,7 +36,7 @@ parser.add_argument('--block_size', default=5040, type=int,
                     help="The size of data block")  # Offline: -, Online: 5040
 parser.add_argument('--layer_num', default=3, type=int,
                     help="The number of recursive layer")  # Offline: 3, Online: 6
-parser.add_argument('--eps_size', default=5, type=int,
+parser.add_argument('--eps_size', default=10, type=int,
                     help="Eps parameter space size")
 parser.add_argument('--min_size', default=4, type=int,
                     help="MinPts parameter space size")
