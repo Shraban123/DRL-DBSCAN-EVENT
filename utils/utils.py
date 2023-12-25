@@ -25,7 +25,7 @@ def load_data_shape(data, train_size):
     # Load features for block 1
     features_skc = torch.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/embeddings_1221190329/block_1/final_embeddings.pt')
     labels_skc = torch.tensor(np.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/0/labels.npy')).to(int)
-    extract_data = torch.cat(features_skc, labels_skc).tolist()
+    extract_data = torch.cat((features_skc, labels_skc)).tolist()
 
     # shuffle the samples
     extract_data_idx = random.sample(extract_data, len(extract_data))
