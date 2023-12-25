@@ -32,7 +32,7 @@ def load_data_shape(data, train_size):
 
     # feature normalization
     extract_data_features = np.array(MinMaxScaler().fit_transform([i[0:-1] for i in extract_data_idx]))
-    extract_data_labels = np.array([i[2] for i in extract_data_idx])
+    extract_data_labels = np.array([i[-1] for i in extract_data_idx])
 
     # sample index for reward
     extract_data_train_masks = random.sample(range(len(extract_data_idx)),
