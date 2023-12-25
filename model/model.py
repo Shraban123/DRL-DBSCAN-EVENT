@@ -53,14 +53,13 @@ class DrlDbscan:
         """
         update the new parameter space and related records
         """
-       self.cur_p = list(self.p_center)
-       self.score_log, self.reward_log, self.im_reward_log, self.p_log, self.action_log, self.nmi_log = [], [], [], \
+        self.cur_p = list(self.p_center)
+        self.score_log, self.reward_log, self.im_reward_log, self.p_log, self.action_log, self.nmi_log = [], [], [], \
                                                                                                         [], [], []
-
-       print("The starting point of the parameter is:  " + str(self.p_center), flush=True)
-       print("The parameter space boundary is:  " + str(self.p_bound), flush=True)
-       print("The size of the parameter space is:  " + str(self.p_size), flush=True)
-       print("The step of the parameter space is:  " + str(self.p_step), flush=True)
+        print("The starting point of the parameter is:  " + str(self.p_center), flush=True)
+        print("The parameter space boundary is:  " + str(self.p_bound), flush=True)
+        print("The size of the parameter space is:  " + str(self.p_size), flush=True)
+        print("The step of the parameter space is:  " + str(self.p_step), flush=True)
 
    def reset(self, max_reward):
        """
