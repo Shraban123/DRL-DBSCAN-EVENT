@@ -4,7 +4,7 @@ import random
 from sklearn.preprocessing import MinMaxScaler
 from sklearn import metrics
 from sklearn.cluster import KMeans
-
+import torch
 """
     Utility functions to handle data and evaluate model.
     Paper: Automating DBSCAN via Reinforcement Learning
