@@ -46,7 +46,7 @@ parser.add_argument('--reward_factor', default=0.2, type=float,
 # TD3 args
 parser.add_argument('--device', default="cpu", type=str,
                     help='"cuda" if torch.cuda.is_available() else "cpu".')
-parser.add_argument('--batch_size', default=16, type=int,
+parser.add_argument('--batch_size', default=32, type=int,
                     help='"Reinforcement learning for sampling batch size')
 parser.add_argument('--step_num', default=30, type=int,
                     help="Maximum number of steps per RL game")
