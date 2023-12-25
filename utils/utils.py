@@ -11,8 +11,36 @@ from sklearn.cluster import KMeans
     Source: https://anonymous.4open.science/r/DRL-DBSCAN
 """
 
-
 def load_data_shape(data, train_size):
+    """
+    Load the datasets of shape type
+    :param data: path of dataset
+    :param train_size: proportion of samples used to generate rewards
+    :return: sample serial numbers for rewards, out-of-order data features and labels
+    """
+
+    # extract features and labels of the dataset
+    extract_data = []
+    # Test for one block
+    # Load features for block 1
+    features_skc = torch.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/embeddings_1221190329/block_1/final_embeddings.pt')
+    labels_skc = torch.tensor(np.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/0/labels.npy')).to(int)
+    extract_data = torch.cat(features_skc, labels_skc).tolist()
+
+    # shuffle the samples
+    extract_data_idx = random.sample(extract_data, len(extract_data))
+
+    # feature normalization
+    extract_data_features = np.array(MinMaxScaler().fit_transform([i[0:2] for i in extract_data_idx]))
+    extract_data_labels = np.array([i[2] for i in extract_data_idx])
+
+    # sample index for reward
+    extract_data_train_masks = random.sample(range(len(extract_data_idx)),
+                                             int(len(extract_data_idx) * train_size))
+
+    return extract_data_train_masks, extract_data_features, extract_data_labels
+
+def load_data_shape_old(data, train_size):
     """
     Load the datasets of shape type
     :param data: path of dataset
