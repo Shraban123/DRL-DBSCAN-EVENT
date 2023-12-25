@@ -72,8 +72,8 @@ if __name__ == '__main__':
     # standardize output records and ignore warnings
     warnings.filterwarnings('ignore')
     std = open(log_save_path + '/std.log', 'a')
-    sys.stdout = std
-    sys.stderr = std
+    # sys.stdout = std
+    # sys.stderr = std
 
     # CUDA
     use_cuda = args.use_cuda and torch.cuda.is_available()
