@@ -1,0 +1,1852 @@
+Dataset size:  2549
+Cluster number:  42
+
++-------------------------------------------------------+
+                         K-Means                             
++-------------------------------------------------------+
+
+******* K-Means NMI: 0.5326
+******* K-Means AMI: 0.4899
+******* K-Means ARI: 0.1113
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32), array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+[ Testing Layer 1 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[14.4, 17.6], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+! Early stop.
+[array([0.47679612, 0.500712  , 0.4997163 , 0.49925402, 0.5295219 ],
+      dtype=float32), array([0.47679612, 0.500712  , 0.4997163 , 0.49925402, 0.5295219 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+[ Testing Layer 2 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[15.84, 16.16], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+! Out of bounds stop.
+[array([0.48129284, 0.475727  , 0.4976159 , 0.4789209 , 0.48680273],
+      dtype=float32), array([0.4811904 , 0.4753792 , 0.4975645 , 0.47871003, 0.48621798],
+      dtype=float32), array([0.48102576, 0.4750544 , 0.49755052, 0.4785662 , 0.48569065],
+      dtype=float32)]
+[[16.0, 309], [16.0, 299], [16.0, 299]]
+! Stop at step 3 with parameter [16.0, 299].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+[ Testing Layer 3 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 299]
+The parameter space boundary is:  [[15.984, 16.016], [293, 305]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+! Early stop.
+[array([0.5124107 , 0.48319915, 0.5179371 , 0.471638  , 0.54011387],
+      dtype=float32), array([0.5124107 , 0.48319915, 0.5179371 , 0.471638  , 0.54011387],
+      dtype=float32)]
+[[16.0, 299], [16.0, 299]]
+! Stop at step 2 with parameter [16.0, 299].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 299]
+The parameter space boundary is:  [[15.9984, 16.0016], [297, 301]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5434362 , 0.59884495, 0.46905124, 0.50794035, 0.5227046 ],
+      dtype=float32), array([0.54343617, 0.59884655, 0.4690505 , 0.5079414 , 0.5227053 ],
+      dtype=float32), array([0.54343617, 0.59884816, 0.46904978, 0.50794256, 0.52270603],
+      dtype=float32), array([0.5434361 , 0.5988497 , 0.46904904, 0.50794363, 0.52270675],
+      dtype=float32), array([0.54343605, 0.5988514 , 0.4690483 , 0.5079447 , 0.52270746],
+      dtype=float32), array([0.54343605, 0.598853  , 0.46904758, 0.5079458 , 0.5227081 ],
+      dtype=float32)]
+[[16.00032, 299], [16.000639999999997, 299], [16.000959999999996, 299], [16.001279999999994, 299], [16.001599999999993, 299], [16.0016, 299]]
+! Stop at step 6 with parameter [16.0016, 299].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+[ Testing Layer 5 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0016, 299]
+The parameter space boundary is:  [[16.00144, 16.00176], [297, 301]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2e-05, 1]
+! Early stop.
+[array([0.49830157, 0.48758617, 0.50831103, 0.49780178, 0.5086934 ],
+      dtype=float32), array([0.49830157, 0.48758617, 0.50831103, 0.49780178, 0.5086934 ],
+      dtype=float32)]
+[[16.0016, 299], [16.0016, 299]]
+! Stop at step 2 with parameter [16.0016, 299].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 1                    
++---------------------------------------------------------------+
+
+0
+[ Training Layer 0 ]
+The size of Label Hash is: 0
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+! Early stop.
+! Stop at step 2 with parameter [16.0, 319].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32), array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 2                    
++---------------------------------------------------------------+
+
+1
+[ Training Layer 0 ]
+The size of Label Hash is: 1
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+! Early stop.
+! Stop at step 5 with parameter [16.0, 319].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32), array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 3                    
++---------------------------------------------------------------+
+
+3
+[ Training Layer 0 ]
+The size of Label Hash is: 3
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+! Early stop.
+! Stop at step 8 with parameter [6.400000000000001, 319].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0037
+******* DBSCAN AMI: 0.0017
+******* DBSCAN ARI: 0.0018
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32), array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 4                    
++---------------------------------------------------------------+
+
+7
+[ Training Layer 0 ]
+The size of Label Hash is: 7
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+! Out of bounds stop.
+! Stop at step 3 with parameter [12.8, 1].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32), array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 5                    
++---------------------------------------------------------------+
+
+9
+[ Training Layer 0 ]
+The size of Label Hash is: 9
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+! Early stop.
+! Stop at step 7 with parameter [12.8, 159].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32), array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 6                    
++---------------------------------------------------------------+
+
+12
+[ Training Layer 0 ]
+The size of Label Hash is: 12
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+! Early stop.
+! Stop at step 3 with parameter [16.0, 159].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32), array([0.56848884, 0.48575595, 0.47139075, 0.5301533 , 0.5887177 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 7                    
++---------------------------------------------------------------+
+
+12
+[ Training Layer 0 ]
+The size of Label Hash is: 12
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 8 with parameter [9.600000000000001, 1].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0011
+******* DBSCAN AMI: 0.0004
+******* DBSCAN ARI: 0.0005
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.48768902, 0.41170394, 0.46696043, 0.40202782, 0.729166  ],
+      dtype=float32), array([0.48768902, 0.41170394, 0.46696043, 0.40202782, 0.729166  ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 8                    
++---------------------------------------------------------------+
+
+13
+[ Training Layer 0 ]
+The size of Label Hash is: 13
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 2 with parameter [16.0, 1].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.46548265, 0.38948384, 0.4687046 , 0.3657245 , 0.7652345 ],
+      dtype=float32), array([0.46548265, 0.38948384, 0.4687046 , 0.3657245 , 0.7652345 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 9                    
++---------------------------------------------------------------+
+
+14
+[ Training Layer 0 ]
+The size of Label Hash is: 14
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 4 with parameter [16.0, 159].
+! The current maximum reward 0 appears when the parameter is [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.4243044 , 0.33463266, 0.48391387, 0.2938406 , 0.83625305],
+      dtype=float32), array([0.4243044 , 0.33463266, 0.48391387, 0.2938406 , 0.83625305],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 10                    
++---------------------------------------------------------------+
+
+14
+[ Training Layer 0 ]
+The size of Label Hash is: 14
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 9 with parameter [1e-07, 319].
+! The current maximum reward 0.0739 appears when the parameter is [3.200000000000001, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.3108905 , 0.1842786 , 0.55714774, 0.15502992, 0.9437564 ],
+      dtype=float32), array([0.3108905 , 0.1842786 , 0.55714774, 0.15502992, 0.9437564 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 11                    
++---------------------------------------------------------------+
+
+17
+[ Training Layer 0 ]
+The size of Label Hash is: 17
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 6 with parameter [22.4, 1].
+! The current maximum reward 0.0739 appears when the parameter is [3.200000000000001, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.22162615, 0.09961577, 0.6566588 , 0.09126978, 0.97365856],
+      dtype=float32), array([0.22162615, 0.09961577, 0.6566588 , 0.09126978, 0.97365856],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 0, Episode 12                    
++---------------------------------------------------------------+
+
+19
+[ Training Layer 0 ]
+The size of Label Hash is: 19
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+Training the 0-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 2 with parameter [19.2, 319].
+! The current maximum reward 0.0739 appears when the parameter is [3.200000000000001, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 0 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [16.0, 319]
+The parameter space boundary is:  [[1e-07, 32.0], [1, 637]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [3.2, 160]
+! Early stop.
+[array([0.20260055, 0.08253434, 0.69037825, 0.07787698, 0.9780682 ],
+      dtype=float32), array([0.20260055, 0.08253434, 0.69037825, 0.07787698, 0.9780682 ],
+      dtype=float32)]
+[[16.0, 319], [16.0, 319]]
+! Stop at step 2 with parameter [16.0, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 1, Episode 1                    
++---------------------------------------------------------------+
+
+19
+[ Training Layer 1 ]
+The size of Label Hash is: 19
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+Training the 1-th layer agent......
+! Early stop.
+! Stop at step 2 with parameter [3.200000000000001, 319].
+! The current maximum reward 0.0739 appears when the parameter is [3.200000000000001, 319].
+******* DBSCAN NMI: 0.0739
+******* DBSCAN AMI: 0.068
+******* DBSCAN ARI: 0.0051
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 1 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+! Early stop.
+[array([0.49313766, 0.5037045 , 0.5084836 , 0.5027925 , 0.5213799 ],
+      dtype=float32), array([0.49313766, 0.5037045 , 0.5084836 , 0.5027925 , 0.5213799 ],
+      dtype=float32)]
+[[3.200000000000001, 319], [3.200000000000001, 319]]
+! Stop at step 2 with parameter [3.200000000000001, 319].
+******* DBSCAN NMI: 0.0739
+******* DBSCAN AMI: 0.068
+******* DBSCAN ARI: 0.0051
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 1, Episode 2                    
++---------------------------------------------------------------+
+
+19
+[ Training Layer 1 ]
+The size of Label Hash is: 19
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+Training the 1-th layer agent......
+! Early stop.
+! Stop at step 20 with parameter [2.8800000000000012, 319].
+! The current maximum reward 0.1324 appears when the parameter is [2.8800000000000012, 319].
+******* DBSCAN NMI: 0.1324
+******* DBSCAN AMI: 0.1223
+******* DBSCAN ARI: 0.042
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 1 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+! Early stop.
+[array([0.49313766, 0.5037045 , 0.5084836 , 0.5027925 , 0.5213799 ],
+      dtype=float32), array([0.49313766, 0.5037045 , 0.5084836 , 0.5027925 , 0.5213799 ],
+      dtype=float32)]
+[[3.200000000000001, 319], [3.200000000000001, 319]]
+! Stop at step 2 with parameter [3.200000000000001, 319].
+******* DBSCAN NMI: 0.0739
+******* DBSCAN AMI: 0.068
+******* DBSCAN ARI: 0.0051
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 1, Episode 3                    
++---------------------------------------------------------------+
+
+27
+[ Training Layer 1 ]
+The size of Label Hash is: 27
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+Training the 1-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 23 with parameter [3.2000000000000015, 239].
+! The current maximum reward 0.1324 appears when the parameter is [2.8800000000000012, 319].
+******* DBSCAN NMI: 0.0738
+******* DBSCAN AMI: 0.0678
+******* DBSCAN ARI: 0.0118
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 1 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+! Early stop.
+[array([0.52560925, 0.56909895, 0.55531245, 0.5654516 , 0.61427295],
+      dtype=float32), array([0.52560925, 0.56909895, 0.55531245, 0.5654516 , 0.61427295],
+      dtype=float32)]
+[[3.200000000000001, 319], [3.200000000000001, 319]]
+! Stop at step 2 with parameter [3.200000000000001, 319].
+******* DBSCAN NMI: 0.0739
+******* DBSCAN AMI: 0.068
+******* DBSCAN ARI: 0.0051
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 1, Episode 4                    
++---------------------------------------------------------------+
+
+36
+[ Training Layer 1 ]
+The size of Label Hash is: 36
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+Training the 1-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Timeout stop.
+! Stop at step 29 with parameter [4.160000000000001, 319].
+! The current maximum reward 0.1324 appears when the parameter is [2.8800000000000012, 319].
+******* DBSCAN NMI: 0.0586
+******* DBSCAN AMI: 0.0525
+******* DBSCAN ARI: 0.0442
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 1 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [3.200000000000001, 319]
+The parameter space boundary is:  [[1.600000000000001, 4.800000000000001], [239, 399]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.32, 40]
+! Out of bounds stop.
+[array([0.6563953 , 0.5198645 , 0.54810166, 0.62607867, 0.622006  ],
+      dtype=float32), array([0.6567116 , 0.5196346 , 0.54755056, 0.6247681 , 0.61986184],
+      dtype=float32), array([0.62760574, 0.5206298 , 0.54256165, 0.60467553, 0.60185224],
+      dtype=float32), array([0.62195224, 0.5204812 , 0.5399751 , 0.59915483, 0.59536445],
+      dtype=float32), array([0.6184077 , 0.51997405, 0.5375436 , 0.5949321 , 0.58910066],
+      dtype=float32), array([0.61723906, 0.51878023, 0.5352065 , 0.59142745, 0.5843483 ],
+      dtype=float32)]
+[[2.8800000000000012, 319], [2.5600000000000014, 319], [2.2400000000000015, 319], [1.9200000000000015, 319], [1.6000000000000014, 319], [1.600000000000001, 319]]
+! Stop at step 6 with parameter [1.600000000000001, 319].
+******* DBSCAN NMI: 0.0
+******* DBSCAN AMI: 0.0
+******* DBSCAN ARI: 0.0
+
+The starting point of the parameter is:  [2.8800000000000012, 319]
+The parameter space boundary is:  [[2.720000000000001, 3.0400000000000014], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 2, Episode 1                    
++---------------------------------------------------------------+
+
+43
+[ Training Layer 2 ]
+The size of Label Hash is: 43
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 319]
+The parameter space boundary is:  [[2.720000000000001, 3.0400000000000014], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+Training the 2-th layer agent......
+! Out of bounds stop.
+! Stop at step 3 with parameter [2.8800000000000012, 299].
+! The current maximum reward 0.1428 appears when the parameter is [2.8800000000000012, 309].
+******* DBSCAN NMI: 0.1416
+******* DBSCAN AMI: 0.1317
+******* DBSCAN ARI: 0.0242
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 2 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 319]
+The parameter space boundary is:  [[2.720000000000001, 3.0400000000000014], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+! Out of bounds stop.
+[array([0.48902515, 0.48017272, 0.50618553, 0.48923996, 0.4962466 ],
+      dtype=float32), array([0.48898238, 0.4801158 , 0.506219  , 0.48925033, 0.49631646],
+      dtype=float32), array([0.4889752 , 0.48010698, 0.5062333 , 0.48924565, 0.4963219 ],
+      dtype=float32)]
+[[2.8800000000000012, 309], [2.8800000000000012, 299], [2.8800000000000012, 299]]
+! Stop at step 3 with parameter [2.8800000000000012, 299].
+******* DBSCAN NMI: 0.1416
+******* DBSCAN AMI: 0.1317
+******* DBSCAN ARI: 0.0242
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 2, Episode 2                    
++---------------------------------------------------------------+
+
+45
+[ Training Layer 2 ]
+The size of Label Hash is: 45
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 319]
+The parameter space boundary is:  [[2.720000000000001, 3.0400000000000014], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+Training the 2-th layer agent......
+! Early stop.
+! Stop at step 5 with parameter [2.848000000000001, 309].
+! The current maximum reward 0.1428 appears when the parameter is [2.8800000000000012, 309].
+******* DBSCAN NMI: 0.1335
+******* DBSCAN AMI: 0.1235
+******* DBSCAN ARI: 0.0383
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 2 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 319]
+The parameter space boundary is:  [[2.720000000000001, 3.0400000000000014], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+! Out of bounds stop.
+[array([0.48902515, 0.48017272, 0.50618553, 0.48923996, 0.4962466 ],
+      dtype=float32), array([0.48898238, 0.4801158 , 0.506219  , 0.48925033, 0.49631646],
+      dtype=float32), array([0.4889752 , 0.48010698, 0.5062333 , 0.48924565, 0.4963219 ],
+      dtype=float32)]
+[[2.8800000000000012, 309], [2.8800000000000012, 299], [2.8800000000000012, 299]]
+! Stop at step 3 with parameter [2.8800000000000012, 299].
+******* DBSCAN NMI: 0.1416
+******* DBSCAN AMI: 0.1317
+******* DBSCAN ARI: 0.0242
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 2, Episode 3                    
++---------------------------------------------------------------+
+
+47
+[ Training Layer 2 ]
+The size of Label Hash is: 47
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 319]
+The parameter space boundary is:  [[2.720000000000001, 3.0400000000000014], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+Training the 2-th layer agent......
+! Out of bounds stop.
+! Stop at step 8 with parameter [2.848000000000001, 299].
+! The current maximum reward 0.1428 appears when the parameter is [2.8800000000000012, 309].
+******* DBSCAN NMI: 0.1455
+******* DBSCAN AMI: 0.1357
+******* DBSCAN ARI: 0.0196
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 2 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 319]
+The parameter space boundary is:  [[2.720000000000001, 3.0400000000000014], [299, 339]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.032, 10]
+! Out of bounds stop.
+[array([0.48902515, 0.48017272, 0.50618553, 0.48923996, 0.4962466 ],
+      dtype=float32), array([0.48898238, 0.4801158 , 0.506219  , 0.48925033, 0.49631646],
+      dtype=float32), array([0.4889752 , 0.48010698, 0.5062333 , 0.48924565, 0.4963219 ],
+      dtype=float32)]
+[[2.8800000000000012, 309], [2.8800000000000012, 299], [2.8800000000000012, 299]]
+! Stop at step 3 with parameter [2.8800000000000012, 299].
+******* DBSCAN NMI: 0.1416
+******* DBSCAN AMI: 0.1317
+******* DBSCAN ARI: 0.0242
+
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 3, Episode 1                    
++---------------------------------------------------------------+
+
+49
+[ Training Layer 3 ]
+The size of Label Hash is: 49
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+Training the 3-th layer agent......
+! Out of bounds stop.
+! Stop at step 5 with parameter [2.864000000000001, 309].
+! The current maximum reward 0.1428 appears when the parameter is [2.8800000000000012, 309].
+******* DBSCAN NMI: 0.1337
+******* DBSCAN AMI: 0.1236
+******* DBSCAN ARI: 0.0415
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 3 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+! Out of bounds stop.
+[array([0.5060123 , 0.4879831 , 0.5019298 , 0.5009977 , 0.49902523],
+      dtype=float32), array([0.50600636, 0.48824814, 0.5018775 , 0.5010011 , 0.4988175 ],
+      dtype=float32), array([0.5060023 , 0.48823944, 0.5018799 , 0.50099814, 0.49882564],
+      dtype=float32), array([0.505997  , 0.48822713, 0.5018852 , 0.5009963 , 0.4988365 ],
+      dtype=float32), array([0.50599414, 0.48821673, 0.50189   , 0.5009916 , 0.49884698],
+      dtype=float32)]
+[[2.876800000000001, 309], [2.873600000000001, 309], [2.870400000000001, 309], [2.867200000000001, 309], [2.864000000000001, 309]]
+! Stop at step 5 with parameter [2.864000000000001, 309].
+******* DBSCAN NMI: 0.1337
+******* DBSCAN AMI: 0.1236
+******* DBSCAN ARI: 0.0415
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 3, Episode 2                    
++---------------------------------------------------------------+
+
+54
+[ Training Layer 3 ]
+The size of Label Hash is: 54
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+Training the 3-th layer agent......
+! Out of bounds stop.
+! Stop at step 5 with parameter [2.8864000000000014, 303].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1438
+******* DBSCAN AMI: 0.134
+******* DBSCAN ARI: 0.0199
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 3 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+! Out of bounds stop.
+[array([0.5060123 , 0.4879831 , 0.5019298 , 0.5009977 , 0.49902523],
+      dtype=float32), array([0.50600636, 0.48824814, 0.5018775 , 0.5010011 , 0.4988175 ],
+      dtype=float32), array([0.5060023 , 0.48823944, 0.5018799 , 0.50099814, 0.49882564],
+      dtype=float32), array([0.505997  , 0.48822713, 0.5018852 , 0.5009963 , 0.4988365 ],
+      dtype=float32), array([0.50599414, 0.48821673, 0.50189   , 0.5009916 , 0.49884698],
+      dtype=float32)]
+[[2.876800000000001, 309], [2.873600000000001, 309], [2.870400000000001, 309], [2.867200000000001, 309], [2.864000000000001, 309]]
+! Stop at step 5 with parameter [2.864000000000001, 309].
+******* DBSCAN NMI: 0.1337
+******* DBSCAN AMI: 0.1236
+******* DBSCAN ARI: 0.0415
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 3, Episode 3                    
++---------------------------------------------------------------+
+
+58
+[ Training Layer 3 ]
+The size of Label Hash is: 58
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+Training the 3-th layer agent......
+! Out of bounds stop.
+! Stop at step 6 with parameter [2.876800000000001, 303].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1426
+******* DBSCAN AMI: 0.1328
+******* DBSCAN ARI: 0.0207
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 3 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+! Out of bounds stop.
+[array([0.5060123 , 0.4879831 , 0.5019298 , 0.5009977 , 0.49902523],
+      dtype=float32), array([0.50600636, 0.48824814, 0.5018775 , 0.5010011 , 0.4988175 ],
+      dtype=float32), array([0.5060023 , 0.48823944, 0.5018799 , 0.50099814, 0.49882564],
+      dtype=float32), array([0.505997  , 0.48822713, 0.5018852 , 0.5009963 , 0.4988365 ],
+      dtype=float32), array([0.50599414, 0.48821673, 0.50189   , 0.5009916 , 0.49884698],
+      dtype=float32)]
+[[2.876800000000001, 309], [2.873600000000001, 309], [2.870400000000001, 309], [2.867200000000001, 309], [2.864000000000001, 309]]
+! Stop at step 5 with parameter [2.864000000000001, 309].
+******* DBSCAN NMI: 0.1337
+******* DBSCAN AMI: 0.1236
+******* DBSCAN ARI: 0.0415
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 3, Episode 4                    
++---------------------------------------------------------------+
+
+62
+[ Training Layer 3 ]
+The size of Label Hash is: 62
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+Training the 3-th layer agent......
+! Early stop.
+! Stop at step 5 with parameter [2.873600000000001, 309].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1397
+******* DBSCAN AMI: 0.1262
+******* DBSCAN ARI: 0.0052
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 3 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8800000000000012, 309]
+The parameter space boundary is:  [[2.864000000000001, 2.8960000000000012], [303, 315]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.0032, 3]
+! Out of bounds stop.
+[array([0.5060123 , 0.4879831 , 0.5019298 , 0.5009977 , 0.49902523],
+      dtype=float32), array([0.50600636, 0.48824814, 0.5018775 , 0.5010011 , 0.4988175 ],
+      dtype=float32), array([0.5060023 , 0.48823944, 0.5018799 , 0.50099814, 0.49882564],
+      dtype=float32), array([0.505997  , 0.48822713, 0.5018852 , 0.5009963 , 0.4988365 ],
+      dtype=float32), array([0.50599414, 0.48821673, 0.50189   , 0.5009916 , 0.49884698],
+      dtype=float32)]
+[[2.876800000000001, 309], [2.873600000000001, 309], [2.870400000000001, 309], [2.867200000000001, 309], [2.864000000000001, 309]]
+! Stop at step 5 with parameter [2.864000000000001, 309].
+******* DBSCAN NMI: 0.1337
+******* DBSCAN AMI: 0.1236
+******* DBSCAN ARI: 0.0415
+
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 1                    
++---------------------------------------------------------------+
+
+62
+[ Training Layer 4 ]
+The size of Label Hash is: 62
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+! Out of bounds stop.
+! Stop at step 6 with parameter [2.8848000000000016, 309].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1429
+******* DBSCAN AMI: 0.1331
+******* DBSCAN ARI: 0.0201
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5237865 , 0.51987034, 0.48483297, 0.50127304, 0.4947615 ],
+      dtype=float32), array([0.5237865 , 0.5198678 , 0.4848337 , 0.50127214, 0.49476126],
+      dtype=float32), array([0.5237866 , 0.5198654 , 0.48483437, 0.50127125, 0.49476108],
+      dtype=float32), array([0.52378666, 0.5198628 , 0.48483503, 0.50127035, 0.4947608 ],
+      dtype=float32), array([0.52378666, 0.5198602 , 0.48483577, 0.5012694 , 0.4947605 ],
+      dtype=float32), array([0.523787  , 0.5198577 , 0.48483637, 0.50126874, 0.49476045],
+      dtype=float32)]
+[[2.8860800000000015, 309], [2.8857600000000017, 309], [2.885440000000002, 309], [2.885120000000002, 309], [2.884800000000002, 309], [2.8848000000000016, 309]]
+! Stop at step 6 with parameter [2.8848000000000016, 309].
+******* DBSCAN NMI: 0.1429
+******* DBSCAN AMI: 0.1331
+******* DBSCAN ARI: 0.0201
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 2                    
++---------------------------------------------------------------+
+
+68
+[ Training Layer 4 ]
+The size of Label Hash is: 68
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+! Early stop.
+! Stop at step 4 with parameter [2.8860800000000015, 307].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5237865 , 0.51987034, 0.48483297, 0.50127304, 0.4947615 ],
+      dtype=float32), array([0.5237865 , 0.5198678 , 0.4848337 , 0.50127214, 0.49476126],
+      dtype=float32), array([0.5237866 , 0.5198654 , 0.48483437, 0.50127125, 0.49476108],
+      dtype=float32), array([0.52378666, 0.5198628 , 0.48483503, 0.50127035, 0.4947608 ],
+      dtype=float32), array([0.52378666, 0.5198602 , 0.48483577, 0.5012694 , 0.4947605 ],
+      dtype=float32), array([0.523787  , 0.5198577 , 0.48483637, 0.50126874, 0.49476045],
+      dtype=float32)]
+[[2.8860800000000015, 309], [2.8857600000000017, 309], [2.885440000000002, 309], [2.885120000000002, 309], [2.884800000000002, 309], [2.8848000000000016, 309]]
+! Stop at step 6 with parameter [2.8848000000000016, 309].
+******* DBSCAN NMI: 0.1429
+******* DBSCAN AMI: 0.1331
+******* DBSCAN ARI: 0.0201
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 3                    
++---------------------------------------------------------------+
+
+71
+[ Training Layer 4 ]
+The size of Label Hash is: 71
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+! Early stop.
+! Stop at step 18 with parameter [2.8860800000000015, 309].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5237865 , 0.51987034, 0.48483297, 0.50127304, 0.4947615 ],
+      dtype=float32), array([0.5237865 , 0.5198678 , 0.4848337 , 0.50127214, 0.49476126],
+      dtype=float32), array([0.5237866 , 0.5198654 , 0.48483437, 0.50127125, 0.49476108],
+      dtype=float32), array([0.52378666, 0.5198628 , 0.48483503, 0.50127035, 0.4947608 ],
+      dtype=float32), array([0.52378666, 0.5198602 , 0.48483577, 0.5012694 , 0.4947605 ],
+      dtype=float32), array([0.523787  , 0.5198577 , 0.48483637, 0.50126874, 0.49476045],
+      dtype=float32)]
+[[2.8860800000000015, 309], [2.8857600000000017, 309], [2.885440000000002, 309], [2.885120000000002, 309], [2.884800000000002, 309], [2.8848000000000016, 309]]
+! Stop at step 6 with parameter [2.8848000000000016, 309].
+******* DBSCAN NMI: 0.1429
+******* DBSCAN AMI: 0.1331
+******* DBSCAN ARI: 0.0201
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 4                    
++---------------------------------------------------------------+
+
+78
+[ Training Layer 4 ]
+The size of Label Hash is: 78
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 5 with parameter [2.887040000000001, 309].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5314501 , 0.5427073 , 0.47512922, 0.49886686, 0.5021066 ],
+      dtype=float32), array([0.5314506 , 0.54271275, 0.47512808, 0.49886662, 0.5021074 ],
+      dtype=float32), array([0.53145117, 0.5427181 , 0.47512692, 0.49886638, 0.5021082 ],
+      dtype=float32), array([0.53145164, 0.5427235 , 0.4751258 , 0.49886614, 0.502109  ],
+      dtype=float32), array([0.5314521 , 0.5427289 , 0.47512472, 0.4988658 , 0.5021098 ],
+      dtype=float32), array([0.53145254, 0.54273427, 0.47512364, 0.49886546, 0.5021106 ],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 5                    
++---------------------------------------------------------------+
+
+78
+[ Training Layer 4 ]
+The size of Label Hash is: 78
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 15 with parameter [2.8848000000000016, 310].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.132
+******* DBSCAN AMI: 0.1219
+******* DBSCAN ARI: 0.0408
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.55531216, 0.6083882 , 0.44715407, 0.5024355 , 0.52473426],
+      dtype=float32), array([0.5553158 , 0.6083987 , 0.44715014, 0.5024362 , 0.52473694],
+      dtype=float32), array([0.55531937, 0.60840905, 0.4471462 , 0.50243694, 0.5247396 ],
+      dtype=float32), array([0.555323  , 0.6084196 , 0.4471422 , 0.50243765, 0.5247423 ],
+      dtype=float32), array([0.5553266, 0.6084301, 0.4471383, 0.5024384, 0.5247449],
+      dtype=float32), array([0.5553302 , 0.6084405 , 0.44713435, 0.5024392 , 0.52474767],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 6                    
++---------------------------------------------------------------+
+
+83
+[ Training Layer 4 ]
+The size of Label Hash is: 83
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 13 with parameter [2.8848000000000016, 307].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1429
+******* DBSCAN AMI: 0.1331
+******* DBSCAN ARI: 0.0201
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5754823 , 0.6574563 , 0.42612845, 0.5303553 , 0.5394731 ],
+      dtype=float32), array([0.5754879 , 0.6574706 , 0.42612237, 0.5303585 , 0.53947675],
+      dtype=float32), array([0.5754936 , 0.6574848 , 0.42611626, 0.53036183, 0.5394804 ],
+      dtype=float32), array([0.57549924, 0.65749913, 0.42611018, 0.5303651 , 0.53948396],
+      dtype=float32), array([0.5755049 , 0.6575134 , 0.42610413, 0.5303683 , 0.5394876 ],
+      dtype=float32), array([0.5755105 , 0.6575277 , 0.42609802, 0.5303716 , 0.5394913 ],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 7                    
++---------------------------------------------------------------+
+
+90
+[ Training Layer 4 ]
+The size of Label Hash is: 90
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 11 with parameter [2.887040000000001, 307].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5864    , 0.71156746, 0.39993456, 0.57116246, 0.55477077],
+      dtype=float32), array([0.58640695, 0.7115858 , 0.399926  , 0.5711694 , 0.55477583],
+      dtype=float32), array([0.58641386, 0.7116043 , 0.39991745, 0.57117635, 0.5547809 ],
+      dtype=float32), array([0.5864207 , 0.7116228 , 0.39990893, 0.57118326, 0.55478597],
+      dtype=float32), array([0.5864277 , 0.71164125, 0.39990038, 0.5711903 , 0.55479103],
+      dtype=float32), array([0.5864346 , 0.7116597 , 0.39989185, 0.5711973 , 0.5547961 ],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 8                    
++---------------------------------------------------------------+
+
+95
+[ Training Layer 4 ]
+The size of Label Hash is: 95
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 3 with parameter [2.8860800000000015, 308].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5873072 , 0.72115636, 0.3945038 , 0.5785963 , 0.5589018 ],
+      dtype=float32), array([0.58731425, 0.7211754 , 0.39449477, 0.5786039 , 0.5589073 ],
+      dtype=float32), array([0.5873212 , 0.72119445, 0.3944857 , 0.5786115 , 0.5589128 ],
+      dtype=float32), array([0.58732826, 0.7212136 , 0.39447668, 0.5786192 , 0.55891824],
+      dtype=float32), array([0.5873353 , 0.7212326 , 0.39446762, 0.5786269 , 0.5589238 ],
+      dtype=float32), array([0.58734226, 0.7212516 , 0.39445856, 0.5786345 , 0.55892926],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 9                    
++---------------------------------------------------------------+
+
+95
+[ Training Layer 4 ]
+The size of Label Hash is: 95
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 7 with parameter [2.8867200000000013, 308].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.5871009 , 0.76279545, 0.36788404, 0.6123819 , 0.5802753 ],
+      dtype=float32), array([0.5871081 , 0.7628175 , 0.36787203, 0.6123929 , 0.5802831 ],
+      dtype=float32), array([0.5871153 , 0.76283956, 0.36786002, 0.6124039 , 0.580291  ],
+      dtype=float32), array([0.58712244, 0.7628616 , 0.3678481 , 0.61241496, 0.5802988 ],
+      dtype=float32), array([0.58712953, 0.7628836 , 0.3678361 , 0.6124259 , 0.58030665],
+      dtype=float32), array([0.5871367 , 0.76290566, 0.36782408, 0.61243695, 0.5803145 ],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 10                    
++---------------------------------------------------------------+
+
+95
+[ Training Layer 4 ]
+The size of Label Hash is: 95
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 19 with parameter [2.887040000000001, 307].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.6153216 , 0.9703386 , 0.14280476, 0.8450051 , 0.7408024 ],
+      dtype=float32), array([0.6153575 , 0.97038144, 0.14271572, 0.84509677, 0.7408853 ],
+      dtype=float32), array([0.61539376, 0.97042465, 0.14262596, 0.8451892 , 0.740969  ],
+      dtype=float32), array([0.61542994, 0.9704677 , 0.14253657, 0.8452813 , 0.7410523 ],
+      dtype=float32), array([0.61546624, 0.9705108 , 0.14244683, 0.8453738 , 0.741136  ],
+      dtype=float32), array([0.6155025 , 0.9705538 , 0.14235738, 0.845466  , 0.74121946],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 11                    
++---------------------------------------------------------------+
+
+100
+[ Training Layer 4 ]
+The size of Label Hash is: 100
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 5 with parameter [2.8867200000000013, 310].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1313
+******* DBSCAN AMI: 0.1212
+******* DBSCAN ARI: 0.0392
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([0.6199731 , 0.8626317 , 0.24006768, 0.71937495, 0.69511527],
+      dtype=float32), array([0.6198127 , 0.8623034 , 0.24035245, 0.71911913, 0.6948432 ],
+      dtype=float32), array([0.61965424, 0.8619783 , 0.24063419, 0.7188661 , 0.69457406],
+      dtype=float32), array([0.6194949 , 0.8616509 , 0.24091749, 0.7186117 , 0.69430345],
+      dtype=float32), array([0.6193362 , 0.86132413, 0.24119994, 0.71835816, 0.694034  ],
+      dtype=float32), array([0.61917806, 0.86099803, 0.24148151, 0.7181055 , 0.69376516],
+      dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 12                    
++---------------------------------------------------------------+
+
+100
+[ Training Layer 4 ]
+The size of Label Hash is: 100
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Early stop.
+! Stop at step 8 with parameter [2.8857600000000017, 310].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1317
+******* DBSCAN AMI: 0.1217
+******* DBSCAN ARI: 0.0403
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([9.7648662e-01, 1.0000000e+00, 3.1454241e-05, 9.9994826e-01,
+       9.9534214e-01], dtype=float32), array([9.7667569e-01, 1.0000000e+00, 3.0737290e-05, 9.9994946e-01,
+       9.9539691e-01], dtype=float32), array([9.7686315e-01, 1.0000000e+00, 3.0036626e-05, 9.9995053e-01,
+       9.9545103e-01], dtype=float32), array([9.7705084e-01, 1.0000000e+00, 2.9345774e-05, 9.9995160e-01,
+       9.9550509e-01], dtype=float32), array([9.7723722e-01, 1.0000000e+00, 2.8670947e-05, 9.9995267e-01,
+       9.9555850e-01], dtype=float32), array([9.7742438e-01, 1.0000000e+00, 2.8002582e-05, 9.9995375e-01,
+       9.9561191e-01], dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 13                    
++---------------------------------------------------------------+
+
+100
+[ Training Layer 4 ]
+The size of Label Hash is: 100
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 5 with parameter [2.8857600000000017, 307].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.1427
+******* DBSCAN AMI: 0.1329
+******* DBSCAN ARI: 0.0196
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([9.4448054e-01, 9.9998569e-01, 9.3710300e-04, 9.9869210e-01,
+       9.7237748e-01], dtype=float32), array([9.4466031e-01, 9.9998581e-01, 9.2928536e-04, 9.9870253e-01,
+       9.7249168e-01], dtype=float32), array([9.4484019e-01, 9.9998605e-01, 9.2150515e-04, 9.9871290e-01,
+       9.7260588e-01], dtype=float32), array([9.4501895e-01, 9.9998629e-01, 9.1381802e-04, 9.9872309e-01,
+       9.7271919e-01], dtype=float32), array([9.4519866e-01, 9.9998641e-01, 9.0612663e-04, 9.9873334e-01,
+       9.7283304e-01], dtype=float32), array([9.4537795e-01, 9.9998665e-01, 8.9849526e-04, 9.9874359e-01,
+       9.7294652e-01], dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+
++---------------------------------------------------------------+
+                Block 15_unsupervised, Layer 4, Episode 14                    
++---------------------------------------------------------------+
+
+101
+[ Training Layer 4 ]
+The size of Label Hash is: 101
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+Training the 4-th layer agent......
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+<class 'torch.Tensor'> <class 'list'>
+! Out of bounds stop.
+! Stop at step 10 with parameter [2.8848000000000016, 311].
+! The current maximum reward 0.1423 appears when the parameter is [2.8864000000000014, 309].
+******* DBSCAN NMI: 0.132
+******* DBSCAN AMI: 0.1219
+******* DBSCAN ARI: 0.0408
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ Testing Layer 4 ]
+Resetting the parameter space......
+The starting point of the parameter is:  [2.8864000000000014, 309]
+The parameter space boundary is:  [[2.8848000000000016, 2.8880000000000012], [307, 311]]
+The size of the parameter space is:  [10, 4]
+The step of the parameter space is:  [0.00032, 1]
+! Out of bounds stop.
+[array([9.9999464e-01, 1.0000000e+00, 9.0288363e-09, 9.9999988e-01,
+       9.9993336e-01], dtype=float32), array([9.9999428e-01, 1.0000000e+00, 1.0128339e-08, 9.9999988e-01,
+       9.9992919e-01], dtype=float32), array([9.9999380e-01, 1.0000000e+00, 1.1339049e-08, 9.9999988e-01,
+       9.9992490e-01], dtype=float32), array([9.9999332e-01, 1.0000000e+00, 1.2692425e-08, 9.9999988e-01,
+       9.9992025e-01], dtype=float32), array([9.9999285e-01, 1.0000000e+00, 1.4169743e-08, 9.9999988e-01,
+       9.9991548e-01], dtype=float32), array([9.9999225e-01, 1.0000000e+00, 1.5811983e-08, 9.9999988e-01,
+       9.9991047e-01], dtype=float32)]
+[[2.8867200000000013, 309], [2.887040000000001, 309], [2.887360000000001, 309], [2.887680000000001, 309], [2.888000000000001, 309], [2.8880000000000012, 309]]
+! Stop at step 6 with parameter [2.8880000000000012, 309].
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+......Early stop at layer 4......
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Final Results: 
+[ Total Hash Size is 104 ]
+[ The best parameter is [2.8864000000000014, 309] ]
+[ The best parameter appears at 36 ]
+[ The number of clusters is 3 ]
+******* DBSCAN NMI: 0.1423
+******* DBSCAN AMI: 0.1324
+******* DBSCAN ARI: 0.0187
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

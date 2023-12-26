@@ -43,10 +43,13 @@ class Actor(nn.Module):
         :return: max_action * attention coefficient
         """
         # att
+        #global_states= torch.FloatTensor(global_states).to(self.device)
+        global_states= global_states.to(self.device)
         states = torch.zeros((global_states.shape[0], 64))
         for i, global_state, local_state in zip(range(global_states.shape[0]), global_states, local_states):
             w_global_state = self.W(global_state)
             u_local_state = self.U(torch.FloatTensor(local_state).to(self.device))
+            #u_local_state = self.U(local_state.to(self.device))
 
             # torch.Size([u_local_state.shape[0]+1, w_global_state.shape[1]/32)
             global_ = w_global_state.expand(u_local_state.shape[0] + 1, w_global_state.shape[1])
@@ -60,7 +63,7 @@ class Actor(nn.Module):
             states[i] = F.relu(torch.cat((torch.mul(global_local_score_[0], w_global_state),
                                           torch.sum(torch.mul(global_local_score_[1:],
                                                               u_local_state), 0).reshape(1,-1)),1))
-        a = F.relu(self.l1(states))
+        a = F.relu(self.l1(torch.FloatTensor(states).to(self.device)))
         a = F.relu(self.l2(a))
         a = torch.sigmoid(self.l3(a))
         return self.max_action * a
@@ -102,7 +105,7 @@ class Critic(nn.Module):
         """
         states = torch.zeros((global_states.shape[0], 64))
         for i, global_state, local_state in zip(range(global_states.shape[0]), global_states, local_states):
-            w_global_state = self.W(global_state)
+            w_global_state = self.W(global_state.to(self.device))
             u_local_state = self.U(torch.FloatTensor(local_state).to(self.device))
 
             # torch.Size([u_local_state.shape[0]+1, w_global_state.shape[1]/32)
@@ -279,10 +282,12 @@ class Skylark_TD3():
 
         global_states = [states[0]]
         local_states = [states[1]]
-        global_states_ = torch.FloatTensor(global_states).to(self.device)
-        local_states_ = list(local_states)
-
-        return self.actor(global_states_, local_states_).cpu().data.numpy().flatten()
+        global_states_ = torch.FloatTensor(global_states).cpu()
+        local_states_ = torch.FloatTensor(local_states).cpu()#list(local_states)
+        #print(global_states_.device)
+        #print(local_states_.device)
+        #print(self.actor(global_states, local_states).detach().cpu().data.numpy().flatten())
+        return self.actor(global_states_, local_states_).detach().cpu().data.numpy().flatten()
 
     def learn(self, replay_buffer, batch_size=16):
         """
@@ -302,13 +307,23 @@ class Skylark_TD3():
             noise = (
                     torch.randn_like(action) * self.policy_noise
             ).clamp(-self.noise_clip, self.noise_clip)
-
+            
+            
             # use target actor to choose next action
+            next_global_state = next_global_state.to('cpu')
+            next_local_state = next_local_state
+
+            print(type(next_global_state), type(next_local_state))
+
             next_action = (
-                    self.actor_target(next_global_state, next_local_state) + noise
+                    self.actor_target(next_global_state, next_local_state) + noise.to(self.device)
             ).clamp(0, self.max_action)
 
             # Compute the target Q value
+            next_global_state = next_global_state.to('cpu')
+            next_local_state = next_local_state
+            next_action = next_action.to('cpu')
+
             target_Q1, target_Q2 = self.critic_target(next_global_state, next_local_state, next_action)
             target_Q = torch.min(target_Q1, target_Q2)
             target_Q = reward + not_done * self.discount * target_Q

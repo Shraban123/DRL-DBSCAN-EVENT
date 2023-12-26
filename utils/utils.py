@@ -11,7 +11,7 @@ import torch
     Source: https://anonymous.4open.science/r/DRL-DBSCAN
 """
 
-def load_data_shape(data, train_size):
+def load_data_shape(data, train_size, tweet_block, methodology):
     """
     Load the datasets of shape type
     :param data: path of dataset
@@ -22,9 +22,22 @@ def load_data_shape(data, train_size):
     # extract features and labels of the dataset
     extract_data = []
     # Test for one block
-    # Load features for block 1
-    features_skc = torch.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/embeddings_1221190329/block_1/final_embeddings.pt')
-    labels_skc = torch.tensor(np.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/1/labels.npy')).to(int)
+    if methodology == 'finevent':
+        # Load features of tweets from FinEvent for block k
+        features_skc = torch.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/embeddings_1221190329/block_'+str(tweet_block)+'/final_embeddings.pt')
+        labels_skc = torch.tensor(np.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/'+str(tweet_block)+'/labels.npy')).to(int)
+
+    elif methodology == 'spacy':
+        # Load features of tweets from spacy for block k
+        features_skc = torch.tensor(np.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/'+str(tweet_block)+'/features.npy'))
+        labels_skc = torch.tensor(np.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/'+str(tweet_block)+'/labels.npy')).to(int)
+    
+    else:
+        # Load features of tweets from unsupervised setting for block k
+        features_skc = torch.load('/home/shraban/Paper3/unsupervised_features/block_'+str(tweet_block)+'/unsupervised_feat_'+str(tweet_block)+'.pt').to('cpu')
+        labels_skc = torch.tensor(np.load('/home/shraban/Paper3/KPGNN/FinEvent/incremental/'+str(tweet_block)+'/labels.npy')).to(int)
+    
+
     extract_data = torch.cat((features_skc, labels_skc.reshape(len(labels_skc),1)), dim=1).tolist()
 
     # shuffle the samples
@@ -183,7 +196,7 @@ def kmeans_metrics(features, labels):
     print("******* K-Means AMI: " + str(k_ami), flush=True)
     print("******* K-Means ARI: " + str(k_ari) + "\n", flush=True)
 
-    return k_nmi
+    return k_nmi, k_ami, k_ari
 
 
 def dbscan_metrics(true_labels, cur_labels):

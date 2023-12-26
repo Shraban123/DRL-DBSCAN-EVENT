@@ -34,7 +34,7 @@ parser.add_argument('--block_num', default=1, type=int,
                     help="The number of data blcoks")  # Offline: 1, Online: 16
 parser.add_argument('--block_size', default=5040, type=int,
                     help="The size of data block")  # Offline: -, Online: 5040
-parser.add_argument('--layer_num', default=3, type=int,
+parser.add_argument('--layer_num', default=6, type=int,
                     help="The number of recursive layer")  # Offline: 3, Online: 6
 parser.add_argument('--eps_size', default=10, type=int,
                     help="Eps parameter space size")
@@ -50,6 +50,14 @@ parser.add_argument('--batch_size', default=32, type=int,
                     help='"Reinforcement learning for sampling batch size')
 parser.add_argument('--step_num', default=30, type=int,
                     help="Maximum number of steps per RL game")
+
+# Shraban Arguments
+parser.add_argument('--tweet_block', default=1, type=int,
+                    help='Which tweet block to run the clusterering algorithm on')
+
+parser.add_argument('--methodology', default='finevent', type=str,
+                    help='spacy or finevent or unsupervised')
+
 
 
 if __name__ == '__main__':
@@ -72,8 +80,8 @@ if __name__ == '__main__':
     # standardize output records and ignore warnings
     warnings.filterwarnings('ignore')
     std = open(log_save_path + '/std.log', 'a')
-    # sys.stdout = std
-    # sys.stderr = std
+    sys.stdout = std
+    sys.stderr = std
 
     # CUDA
     use_cuda = args.use_cuda and torch.cuda.is_available()
@@ -82,7 +90,7 @@ if __name__ == '__main__':
 
     # get sample serial numbers for rewards, out-of-order data features and labels
     if "Shape" in args.data_path:
-        idx_reward, features, labels = load_data_shape(args.data_path, args.train_size)
+        idx_reward, features, labels = load_data_shape(args.data_path, args.train_size, args.tweet_block, args.methodology)
         idx_reward, features, labels = [idx_reward], [features], [labels]
     elif "Stream" in args.data_path:
         idx_reward, features, labels = load_data_stream(args.data_path, args.train_size,
@@ -102,7 +110,8 @@ if __name__ == '__main__':
         agents.append(drl)
 
     # Train agents with serialized data blocks
-    for b in range(0, args.block_num):
+    b = str(args.tweet_block) + '_' + args.methodology # Replace b1 with b for original code and delete this line
+    for b1 in range(0, args.block_num):
         # log path
         if not os.path.exists(args.log_path + '/Block' + str(b)):
             os.mkdir(args.log_path + '/Block' + str(b))
@@ -112,7 +121,13 @@ if __name__ == '__main__':
         sys.stderr = std
 
         # compare with the result of Kmeans
-        k_nmi = kmeans_metrics(features[b], labels[b])
+        k_nmi, k_ami, k_ari = kmeans_metrics(features[b1], labels[b1])
+        with open(args.log_path + '/Block' + str(b) + '/k_nmi.txt', 'w') as f:
+            f.write(str(k_nmi))
+        with open(args.log_path + '/Block' + str(b) + '/k_ami.txt', 'w') as f:
+            f.write(str(k_ami))
+        with open(args.log_path + '/Block' + str(b) + '/k_ari.txt', 'w') as f:
+            f.write(str(k_ari))
 
         final_reward_test = [0, p_center, 0]
         label_dic_test = set()
@@ -127,9 +142,9 @@ if __name__ == '__main__':
             agent.reset(final_reward_test)
 
             # testing
-            cur_labels, cur_cluster_num, p_log = agent.detect(features[b], collections.OrderedDict())
+            cur_labels, cur_cluster_num, p_log = agent.detect(features[b1], collections.OrderedDict())
             final_reward_test = [0, p_log[-1], 0]
-            d_nmi, d_ami, d_ari = dbscan_metrics(labels[b], cur_labels)
+            d_nmi, d_ami, d_ari = dbscan_metrics(labels[b1], cur_labels)
 
             # update log
             for p in p_log:
@@ -170,14 +185,14 @@ if __name__ == '__main__':
 
                 # train the l-th layer
                 print("Training the {0}-th layer agent......".format(l), flush=True)
-                cur_labels, cur_cluster_num, p_log, nmi_log, max_reward = agent.train(i, idx_reward[b], features[b],
-                                                                                      labels[b], label_dic,
+                cur_labels, cur_cluster_num, p_log, nmi_log, max_reward = agent.train(i, idx_reward[b1], features[b1],
+                                                                                      labels[b1], label_dic,
                                                                                       args.reward_factor)
 
                 # update log
                 p_logs = np.hstack((p_logs, np.array(list(zip(*p_log)))))
                 nmi_logs = np.hstack((nmi_logs, np.array(nmi_log)))
-                d_nmi, d_ami, d_ari = dbscan_metrics(labels[b], cur_labels)
+                d_nmi, d_ami, d_ari = dbscan_metrics(labels[b1], cur_labels)
                 with open(args.log_path + '/Block' + str(b) + time_log + '/init_log.txt', 'a') as f:
                     f.write('episode=' + str(i) + ', layer=' + str(l) + ',K-Means NMI=' + str(k_nmi) + '\n')
                     f.write(str(p_logs) + '\n')
@@ -194,8 +209,8 @@ if __name__ == '__main__':
                 # update starting point
                 print("Resetting the parameter space......", flush=True)
                 agent.reset0()
-                cur_labels, cur_cluster_num, p_log = agent.detect(features[b], label_dic)
-                d_nmi, d_ami, d_ari = dbscan_metrics(labels[b], cur_labels)
+                cur_labels, cur_cluster_num, p_log = agent.detect(features[b1], label_dic)
+                d_nmi, d_ami, d_ari = dbscan_metrics(labels[b1], cur_labels)
 
                 # early stop
                 if len(max_max_reward_logs) > 3 and \
@@ -216,7 +231,7 @@ if __name__ == '__main__':
         cur_labels = label_dic[str(max_max_reward[1][0]) + str("+") + str(max_max_reward[1][1])]
         cur_cluster_num = len(set(list(cur_labels)))
         print("[ The number of clusters is {0} ]".format(cur_cluster_num), flush=True)
-        nmi, ami, ari = dbscan_metrics(labels[b], cur_labels)
+        nmi, ami, ari = dbscan_metrics(labels[b1], cur_labels)
         print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n', flush=True)
         print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n', flush=True)
 
@@ -236,14 +251,17 @@ if __name__ == '__main__':
             f.write(str(first_meet_num) + '\n')
         with open(args.log_path + '/Block' + str(b) + '/8_all_num.txt', 'a') as f:
             f.write(str(len(label_dic)) + '\n')
+        
+        torch.save(cur_labels,args.log_path + '/Block' + str(b) + '/9_pred_cluster_label.pt')
+        torch.save(labels[b1],args.log_path + '/Block' + str(b) + '/10_actual_cluster_label.pt')
 
         # evaluate clustering result
         max_reward_nmi = 0
         max_nmi = 0
         max_nmi_logs = []
         for cur_labels in label_dic.values():
-            reward_nmi = metrics.normalized_mutual_info_score(labels[b][idx_reward[b]], cur_labels[idx_reward[b]])
-            nmi = metrics.normalized_mutual_info_score(labels[b], cur_labels)
+            reward_nmi = metrics.normalized_mutual_info_score(labels[b1][idx_reward[b1]], cur_labels[idx_reward[b1]])
+            nmi = metrics.normalized_mutual_info_score(labels[b1], cur_labels)
             if reward_nmi > max_reward_nmi:
                 max_reward_nmi, max_nmi = reward_nmi, nmi
             max_nmi_logs.append(max_nmi)
